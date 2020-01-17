@@ -1,0 +1,294 @@
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.but {
+    border-radius: 2px;
+    border: 2px solid brown;
+    background: brown;
+    width: 100px;
+    height: 30px;
+    color: white;
+}
+
+.banner {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.de {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    width: 240px;
+}
+
+.h5 {
+    font-size: 70px;
+    color: white;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+
+.pro {
+    border: 2px solid lightblue;
+    margin-top: 40px;
+    border-radius: 5px;
+    width: 300px;
+    height: 460px;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.order {
+    border-radius: 2px;
+    border: 2px solid brown;
+    background: brown;
+    width: 100px;
+    height: 30px;
+    color: white;
+}
+
+.img {
+    height: 200px;
+    width: 250px;
+}
+
+.text {
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 8px solid lightgrey;
+    width: 500px;
+    height: 440px;
+}
+
+.login {
+    width: 400px;
+    height: 400px;
+    margin-top: 40px;
+    background: #000;
+    color: white;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    margin-left: 500px;
+}
+
+.inputtext {
+    margin-top: 10px;
+    width: 400px;
+    height: 40px;
+    border: 2px solid red;
+    border-radius: 2px;
+}
+
+.input {
+    height: 30px;
+    width: 400px;
+    border: none;
+    background: white;
+    border-bottom: 1px solid white;
+}
+
+.login input {
+    margin-top: 7px;
+    height: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.login button {
+    width: 100%;
+    margin-top: 40px;
+    height: 30px;
+    background: green;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+.res {
+    border-radius: 2px;
+    border: 2px solid brown;
+    background: brown;
+    width: 100px;
+    height: 30px;
+    color: white;
+    margin-top: 5px;
+}
+
+a {
+    text-align: none;
+    color: white;
+    text-decoration: none;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #9D0006;
+    color: white;
+    margin-top: 70px;
+    text-align: left;
+    padding: 10px 10px;
+}
+
+.header1 {
+    background-color: brown;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+}
+
+.shoe-container {
+    display: grid;
+    margin-left: 20px;
+    grid-template-columns: auto auto auto auto;
+}
+
+.item-shoe-icon {
+    height: 230px;
+    width: 270px;
+}
+
+.item-shoe-name {
+    font-size: 20px;
+    margin-left: 8px;
+    color: black;
+}
+
+.item-shoe-type {
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 8px;
+    color: black;
+}
+
+.item-shoe-price {
+    font-size: 18px;
+    margin-left: 8px;
+}
+
+.item-shoe-old-price {
+    font-size: 18px;
+    margin-left: 8px;
+    color: #888;
+    text-decoration: line-through;
+}
+
+.item-shoe-edit {
+    border-radius: 2px;
+    border: 2px solid green;
+    background: green;
+    width: 100px;
+    height: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.item-shoe-delete {
+    border-radius: 2px;
+    border: 2px solid brown;
+    background: brown;
+    width: 100px;
+    height: 30px;
+    color: white;
+}
+
+.item-shoe-buy {
+    background: blue;
+}
+
+.footer {
+    margin-top: 30px;
+    background: #333;
+    padding: 16px;
+    color: white;
+}
+
+.back {
+    margin-top: 40px;
+    margin-left: 20px;
+    background-color: black;
+    width: 400px;
+    height: 500px;
+    padding: 20px;
+    color: #EB5A46;
+}
+
+.butt {
+    width: 400px;
+    height: 30px;
+    border-radius: 2px;
+    border: 2px solid #EB5A46;
+    margin-top: 30px;
+    background-color: #EB5A46;
+}
+
+.input1 {
+    height: 30px;
+    width: 350px;
+    color: white;
+    border: none;
+    background: black;
+    border-bottom: 1px solid white;
+}
+
+h1 {
+    text-align: center;
+}
+
+.body {
+    margin-top: 110px;
+    padding: 20px;
+    width: 500px;
+    margin-left: 500px;
+    height: 600px;
+}
+
+p {
+    text-align: center;
+}
